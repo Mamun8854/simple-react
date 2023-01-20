@@ -1,0 +1,125 @@
+.sidebar{
+    margin-right: 5%;
+}
+.author{
+    position: relative;
+}
+.author-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.author-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.author-info{
+    
+    line-height: 1px;
+    margin-left: 20px;
+}
+.author-personal-info{
+    width: 100%;
+    background-color: rgb(210, 202, 202);
+    border-radius: 10px;
+    /* padding-inline: 25px; */
+    display: flex;
+    margin-top: 50px;
+    
+    
+}
+
+.author-personal-information{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 10px;
+    
+}
+
+.select-break-time{
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+    background-color: rgb(210, 202, 202);
+    border-radius: 10px;
+    text-align: center;
+}
+.select-break-time button{
+    margin-top: 10px;
+    border-radius: 20%;
+    margin-left: 5px;
+    border: none;
+}
+.select-break-time button:hover{
+    background-color: tomato;
+}
+.reading-time{
+    width: 100%;
+    background-color: rgb(210, 202, 202);
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 50px;
+    margin-top: 20px;
+    
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    
+}
+.reading-time span{
+    padding-left: 50px;
+}
+.break-time{
+    width: 100%;
+    background-color: rgb(210, 202, 202);
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 10px;
+    margin-top: 20px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    
+}
+.break-time span{
+    padding-left: 50px;
+}
+@media screen and (max-width:768px) {
+    .sidebar{
+        margin-inline: auto;
+    }
+    .author-personal-info{
+        width: 90%;
+        margin-inline:auto;
+    }
+    .select-break-time{
+        width: 90%;
+        margin-inline:auto;
+    }
+    .select-break-time button{
+        margin-left: 10%;
+    }
+    .reading-time{
+        width: 90%;
+        margin-inline: auto;
+    }
+    .reading-time span{
+        padding-left: 60%;
+    }
+    .break-time{
+        width: 90%;
+        margin-inline: auto;
+    }
+    .break-time span{
+        padding-left: 60%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .author-personal-info{
+        padding-inline: 0;
+    }
+}

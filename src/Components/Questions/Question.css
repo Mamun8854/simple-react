@@ -1,0 +1,30 @@
+.QuesTions{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    width: 90%;
+    margin-inline: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.question{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+}
+.question p{
+    font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+    .QuesTions{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px){
+    .QuesTions{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}

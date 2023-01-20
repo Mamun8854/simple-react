@@ -1,0 +1,75 @@
+.main-page{
+    background-color: aquamarine;
+    top: 0;
+}
+.header-info{
+    margin-top: 0;
+    margin-left: 5%;
+    padding-top: 20px;
+}
+.header-info h2{
+    margin-top: 0;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    text-align: center;
+    
+    
+}
+.books-side{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin-inline: auto;
+    
+}
+.summery-side{
+    margin-right: auto ;
+}
+
+.complete-btn{
+    margin-top: 20px;
+}
+.complete-btn button{
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+.complete-btn button:hover{
+    background-color: blue;
+}
+@media screen and (max-width:768px) {
+    .header-info{
+        text-align: center;
+        line-height: 10px;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .books-side{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .complete-btn{
+        position: relative;
+    }
+    .summery-side{
+        margin-right: 0;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .main-container{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .books-side{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+   
+}
